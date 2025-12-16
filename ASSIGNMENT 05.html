@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Creating Forms Using HTML </title>
+  </head>
+<body bgcolor="#f5fcff" text="#000000">
+<!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+        <h1 align="center">Creating Forms using HTML</h1>
+        <h2 align="center">Savitribai Phule Pune University</h2>
+        <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+        <hr color="blue" size="3">
+		
+	<!-- QUESTION 01:BASIC FORMS -->
+	<h2>1.Basic Registration Form Example</h2>
+<form action="#" method="post">
+   <label for="name">Full Name:</label>
+   <input type="text" id="name" name="full name" placeholder="enter your full name" required>
+   <br><br>
+   <label for="email">Email:</label>
+   <input for="email" id="email" name="email" placeholder="name@example.com" required>
+   <br><br>
+   <label for="mobile">Mobile No:</label>
+   <input for="tel" id="mobile" name="mobile" placeholder="9999999999">
+   <br><br>
+   <button type="sumbit">Sumbit</button>
+   <button type="reset">Reset</button>
+</form>
+   
+      <!-- STUDENT ACTIVITY -->
+   <h2>1.Basic Registration Form Student Activity</h2>
+<form action="#" method="post">
+   <label for="SANIKA GANESH BHASKAR">Full Name:</label>
+   <input type="text" id="SANIKA" name="SANIKA GANESH BHASKAR" placeholder="SANIKA GANESH BHASKAR" size="21" required>
+   <br><br>
+   <label for="sanikabhaskar2007@gmail.com">Email:</label>
+   <input for="sanikabhaskar2007@gmail.com" id="sanikabhaskar2007@gmail.com" name="sanikabhaskar2007@gmail.com" placeholder="sanikabhaskar2007@gmail.com" required>
+   <br><br>
+   <label for="sanika2309">Password:</label>
+   <input type="sanika2309" id="sanika2309" name="sanika2309" placeholder="sanika2309" required>
+   <br><br>
+   <label for="sanika2309">Confirm Password:</label>
+   <input type="sanika2309" id="sanika2309" name="sanika2309" placeholder="sanika2309" required>
+   <br><br>
+   <button type="sumbit">Sumbit</button>
+   <button type="reset">Reset</button>
+</form>
+
+   <!-- QUESTION 02: RADIO & CHECKBOX INPUTS -->
+   <h2>2.Gender & Skills Example</h2>
+   
+<form>
+   <!-- Radio Button:single choice -->
+   <label>Gender:</label>
+   <input type="radio" id="male" name="gender" value="male">
+   <label for="male">Male:</label>
+   <input type="radio" id="female" name="gender" value="female">
+   <label for="female">Female:</label>
+   <input type="radio" id="other" name="gender" value="other">
+   <label for="other">Other:</label>
+   <br><br>
+   <!-- Checkbox:multiple choice -->
+   <label>Skills:</label>
+   <input type="checkbox" id="html" name="skills" value="HTML">
+   <label for="html">HTML:</label>
+   <input type="checkbox" id="css" name="skills" value="CSS">
+   <label for="css">CSS:</label>
+   <input type="checkbox" id="js" name="skills" value="JavaScript">
+   <label for="js">JavaScript:</label>
+   <br><br>
+   <button type="sumbit">Sumbit</button>
+   <button type="reset">Reset</button>
+</form>
+				
+   <h2>2.Student Activity</h2>
+<form>
+   <!-- Radio Button:single choice -->
+   <label>Subject:</label>
+   <input type="radio" id="data science" name="subject" value="data science">
+   <label for="data science">Data Science:</label>
+   <input type="radio" id="c programming" name="subject" value="c programming">
+   <label for="c programming">C Programming:</label>
+   <input type="radio" id="Coa" name="subject" value="Computer Organization & Architecture">
+   <label for="Coa">Computer Organization & Architecture:</label>
+   <br><br>	
+   <!-- Checkbox:multiple choice -->
+   <label>Skills:</label>	
+   <input type="checkbox" id="teamwork" name="skills" value="teamwork">
+   <label for="teamwork">Teamwork:</label>
+   <input type="checkbox" id="communication" name="skills" value="communication">
+   <label for="communication">Communication:</label>
+   <input type="checkbox" id="problem-solving" name="skills" value="problem-solving">
+   <label for="problem-solving">Problem-solving:</label>
+   <br><br>
+   <button type="sumbit">Sumbit</button>
+   <button type="reset">Reset</button>
+</form>
+
+<!-- QUESTION 03: DROPDOWN / SELECT -->
+	<h2>3.Country & City Select Example </h2>
+<form>
+	   <label for="country">Country:</lable>
+	   <select id="country" name="country" required>
+	   <option value="">-- Select country --</option>
+	   <option value="india">India</option>
+	   <option value="usa">USA</option>
+	   <option value="uk">United kingdom</option>
+	  </select>
+      <br><br>	  
+	  <label for="cities">Preferred Cities (hold ctrl /cmd for multiple):</label>
+	  <select id="cities" name="cities[]" multiple size="4">
+	   <option value="mumbai">Mumbai</option>
+	   <option value="delhi">Delhi</option>
+	   <option value="bangalore">Bangaloru</option>
+	   <option value="chennai">Chennai</option>
+	   </select>
+		<br><br>
+		<button type="submit">Submit</button>
+       </form>
+	   <h2>planet and space mission selection</h2>
+	   <form>
+	   <!--planet dropdown-->
+	   <label for="planet">planet:</label>
+	   <select id="planet" name="Planet" required>
+	       <option value=""disable selected>select a planet</option>
+		   <option value="mercury">Mercury</option>
+		   <option value="venus">Venus</option>
+		   <option value="earth">Earth</option>
+		   <option value="mars">Mars</option>
+		   <option value="jupiter">Jupiter</option>
+	   </select>
+
+       <br><br>	  
+
+
+        <!--multi-select space mission-->
+		<label for="mission">
+		  famous space mission(hold crl/cmd to select multiple);
+		  </label><br>
+		<select id="mission" name="mission[]" multiple size="4">
+		  <option value="apllo11">Apllo 11</option>
+		  <option value="chandrayaan3">Chandrayaan 3</option>
+		  <option value="mars_rover">Mars Rover</option>
+		  <option value="voyager">Voyager</option>
+		</select>
+
+        <br><br>		
+		
+		<button type="submit">Submit</button>
+		</form>
+		
+	<!-- QUESTION 04-->
+	
+	<h1>Question 4:Textarea, Placeholders & Fieldsets (grouping field)
+	
+	<h2>Example</h2>
+	<form> 
+	  <fieldset>
+	    <legend>Contact Info</legend>
+		<label for="address" name="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Street, Area, City, Pin"></textarea>
+		<br><br>
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob">
+		<br><br>
+		<label for="bio">Short Bio:</label><br>
+		<textarea id="bio" name="bio" rows="3" placeholder="Write a short bio..."></Textarea>
+	  </fieldset>
+	  <br>
+	  <button type="submit">Submit</button>
+	</form>
+	
+	<h2>Student Activity</h2>
+	<form>
+	  <fieldset>
+	    <legend>Unit Test</legend>
+		<label for="q1" name="question">Question 1:</label><br>
+		<textarea id="q1" name="q1" rows="2" cols="40" placeholder="Enter answer for question 1"></textarea>
+	    <br><br>
+		<label for="q2" name="question">Question 2:</label>
+		<input type="text" id="q2" name="q2" placeholder="Enater answer for question 2"
+		<br><br>
+		<label for="q3" name="question">Question 1:</label><br>
+		<textarea id="q3" name="q3" rows="2" cols="40" placeholder="Enter answer for question 3"></textarea>
+	    <br><br>
+		<label for="q4" name="question">Question 2:</label>
+		<input type="text" id="q4" name="q4">
+		<br><br>
+	    <label for="q5" name="question">Question 1:</label><br>
+		<textarea id="q5" name="q5" rows="2" cols="40" placeholder="Enter answer for question 5"></textarea>
+	  </fieldset>
+	  <br>
+	  <button type="submit">Submit</button>
+	</form>
+	  
+	  <!-- QUESTION 05:VALIDATION & ADVANCED INPUTS -->
+	<h2>5. Validation & Advanced Controls Example</h2>
+	<form onsubmit="return validateForm()">
+	<label for="username">Username (alphanumeric, 4-12 chars):</label>
+	<input type="text" id="username" name="username" pattern="[A-Za-z0-9]{4,12}" required>
+	<small>Use 4–12 letters or numbers.</small>
+		<br><br>
+	<label for="age">Age (18 - 60):</label>
+	<input type="number" id="age" name="age" min="18" max="60" required>
+		<br><br>
+	<label for="profile">Profile Picture (optional):</label>
+	<input type="file" id="profile" name="profile" accept="image/*">
+		<br><br>
+	<label for="terms">
+	<input type="checkbox" id="terms" name="terms" required>
+	I accept the Terms & Conditions
+	</label>
+		<br><br>
+	<input type="submit" value="submit">
+	<input type="reset" value="Clear">
+	</form>
+	<script>
+	function validateForm(){
+	// simple client-side extra validation example
+	const age =document.getElementById('age').value;
+	
+	if(age < 18 || age > 60){
+	alert("Age must be between 18 and 60.");
+	return false;
+	}
+	return false;
+	}
+	</script>
+	
+	<h3>STUDENT ACTIVITY</h3>
+	<h2>5.Create a form that add take two numbers</h2>
+	
+	 <form onsubmit="return addNumbers();">
+    <label>Number 1:</label><br>
+    <input type="number" id="num1" placeholder="Enter first number"><br><br>
+
+    <label>Number 2:</label><br>
+    <input type="number" id="num2" placeholder="Enter second number"><br><br>
+
+    <button type="submit">Add</button><br><br>
+
+    <label>Result:</label><br>
+    <input type="text" id="result" readonly>
+  </form>
+   <script>
+    function addNumbers() {
+      // Get input values
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+
+      // Validation
+     
+
+      // Convert to numbers and add
+      let sum = Number(num1) + Number(num2);
+
+      // Display result
+      document.getElementById("result").value = sum;
+
+      return false; // Prevent form submission
+    }
+  </script>
+	  
+	  
+	  
+	  
+	<!-- Footer Section -->
+		<footer>
+        <p align="center"> 
+            Created by: <b>SANIKA BHASKAR</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            &copy; 2025 Savitribai Phule Pune University
+        </p>
+    </footer>
+</body>
+</html>
+	
