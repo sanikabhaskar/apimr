@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The <head> section contains metadata and the title of the page -->
+    <title>carryout validation using JavaScript</title>
+</head>
+ 
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+    <h1 align="center">carryout validation using JavaScript</h1>
+    <h2 align="center">Savitribai Phule Pune University</h2>
+    <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+    <hr color="blue" size="3">
+	
+<!-- question 1 -->
+<h1>1. registration form validation </h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Validation</title>
+
+    <!-- Script Tag -->
+    <script type="text/javascript">
+
+        <!-- Question 1: Registration Form Validation -->
+        function validate() {
+
+            // Get values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            /* Empty Field Validation */
+            if (name == "" || email == "" || password == "") {
+                alert("All fields are required");
+                return false;
+            }
+
+            /* Email Validation */
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            /* Password Length Validation */
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <!-- Form Tag -->
+    <form onsubmit="return validate()">
+
+        Name:<br>
+        <!-- Text Box -->
+        <input type="text" id="name"><br><br>
+
+        Email:<br>
+        <!-- Text Box -->
+        <input type="text" id="email"><br><br>
+
+        Password:<br>
+        <!-- Password Box -->
+        <input type="password" id="password"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
+
+<!-- question 2 -->
+<h2>2.Email validation using javascript </h2>
+  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+
+    <!-- Script Tag -->
+    <script type="text/javascript">
+
+        <!-- Question 2: Email Validation using JavaScript -->
+        function validateEmail() {
+
+            var email = document.getElementById("email").value;
+
+            /* Empty Field Check */
+            if (email == "") {
+                alert("Email field should not be empty");
+                return false;
+            }
+
+            /* Email Validation */
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                alert("Invalid Email Address");
+                return false;
+            }
+
+            alert("Valid Email Address");
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Email Validation Form</h2>
+
+    <!-- Form Tag -->
+    <form onsubmit="return validateEmail()">
+
+        Email:<br>
+        <!-- Text Box -->
+        <input type="text" id="email"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Check Email">
+
+    </form>
+
+</body>
+</html> 
+
+<!-- question 3 -->
+<h3>3.password Length validation</h3>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Length Validation</title>
+
+    <!-- Script Tag -->
+    <script type="text/javascript">
+
+        <!-- Question 3: Password Length Validation -->
+        function checkPassword() {
+
+            var password = document.getElementById("password").value;
+
+            /* Empty Password Check */
+            if (password == "") {
+                alert("Password field should not be empty");
+                return false;
+            }
+
+            /* Password Length Validation */
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            alert("Valid Password");
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Password Validation Form</h2>
+
+    <!-- Form Tag -->
+    <form onsubmit="return checkPassword()">
+
+        Password:<br>
+        <!-- Password Box -->
+        <input type="password" id="password"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Check Password">
+
+    </form>
+
+</body>
+</html>
+
+<!-- question 4 -->
+<h4>4.Empty field validation</h4>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empty Field Validation</title>
+
+    <!-- Script Tag -->
+    <script type="text/javascript">
+
+        <!-- Question 4: Empty Field Validation -->
+        function checkEmpty() {
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            /* Empty Field Validation */
+            if (name == "" || email == "" || password == "") {
+                alert("Please fill all the fields");
+                return false;
+            }
+
+            alert("All fields are filled");
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Empty Field Validation Form</h2>
+
+    <!-- Form Tag -->
+    <form onsubmit="return checkEmpty()">
+
+        Name:<br>
+        <!-- Text Box -->
+        <input type="text" id="name"><br><br>
+
+        Email:<br>
+        <!-- Text Box -->
+        <input type="text" id="email"><br><br>
+
+        Password:<br>
+        <!-- Password Box -->
+        <input type="password" id >
+		
+
+<footer>
+        <p align="center">
+            Created by: <b>SANIKA BHASKAR</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            &copy; 2025 Savitribai Phule Pune University</p>
+	</footer>
+	</Body>
+	</html>
+
+		
+
